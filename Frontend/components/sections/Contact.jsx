@@ -19,9 +19,8 @@ export default function Contact() {
     setResult("Sending...");
     const formData = new FormData(event.target);
     
-    // Using environment variable for access key
-    const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "e0579f5b-bc9a-4133-83dc-9cfb75e7936f";
-    formData.append("access_key", accessKey);
+    // Hardcoded access key as requested
+    formData.append("access_key", "e0579f5b-bc9a-4133-83dc-9cfb75e7936f");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
