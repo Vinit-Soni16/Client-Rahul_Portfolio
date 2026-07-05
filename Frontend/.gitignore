@@ -1,0 +1,17 @@
+node_modules/
+.next/
+.env*
+node_modules/
+build/
+.envnode_modules/
+.env
+dist/
+build/
+.next/
+coverage/
+node_modules/
+.next/
+out/
+build/
+.env*
+npm-install.log
